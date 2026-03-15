@@ -1,6 +1,7 @@
 import re
-from collections import namedtuple, defaultdict, Iterable
-from six import string_types
+from collections import namedtuple, defaultdict
+from collections.abc import Iterable
+string_types = (str,)
 
 
 class Rule(namedtuple("Rule", "regexes types stop attrs")):
